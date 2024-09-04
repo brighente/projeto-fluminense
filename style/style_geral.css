@@ -10,6 +10,7 @@
     --cor04: #01633D;
     --cor05: #004e00;
     --cor06: rgb(107, 107, 107);
+    --cor07: rgb(75, 75, 75);
 
     --fonte01: 'Lato';
     --fonte02: 'Times New Roman', Times, serif;
@@ -40,43 +41,30 @@ nav a:hover{
 nav#cima{
     background-color: var(--cor01);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav#baixo{
     background-color: var(--cor04);
     padding: 10px;
-    columns: 2;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.301);
-    margin-bottom: 30px;
-}
-
-nav#cima a{
-    display: block;
-    text-align: center;
-    padding-right: 2em;
-}
-
-nav#baixo a{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-nav#baixo a.esq{
-    text-align: right;
-    margin-right: 10px;
-}
-
-nav#baixo a.dir{
-    text-align: left;
 }
 
 header{
     background-color: var(--cor02);
     color: var(--cor06);
+    width: 100%;
+    position: sticky;
+    top: 0px;
 }
 
 header h1{
+    font-family: var(--fonte02);
     font-size: 3.5em;
     text-align: center;
     font-variant: small-caps;
@@ -85,15 +73,17 @@ header h1{
 main{
     background-color: var(--cor02);
     padding: 30px;
-    margin: auto;
     min-width: 300px;
     max-width: 1050px;
     border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.301);
 }
 
 main h1{
     font-size: 3em;
+    margin-bottom: 15px;
     font-family: var(--fonte03);
     font-variant: small-caps;
     text-align: center;
@@ -110,6 +100,21 @@ main p{
     font-size: 1.3em;
     font-family: var(--fonte01);
     text-align: justify;
+}
+
+.int{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.int a{
+    text-decoration: none;
+    color: var(--cor07);
+    font-weight: bold;
+}
+
+.int a:hover{
+    text-decoration: underline;
 }
 
 img{

@@ -18,12 +18,14 @@ b{
     color: #003522;
 }
 
+h2#topo{
+    margin-top: -70px;
+}
+
 ul{
     font-family: var(--fonte01);
     font-size: 1.2em;
     list-style: none;
-    max-width: 700px;
-    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 } 
@@ -33,6 +35,12 @@ ul > li::before{
     color: var(--cor01);
 }
 
+ul.goleiros{
+    text-align: center;
+}
+
 ul#jogadores{
-    columns: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
 }
